@@ -3,7 +3,7 @@ import {
     CreateUserDto,
     UpdateUserDto,
     UsersRepository,
-} from "../../../domain/repositories/users-repository";
+} from "../../../domain/repositories/UsersRepository";
 import { prisma } from "../prisma";
 
 export class UsersPostgreRepository implements UsersRepository {

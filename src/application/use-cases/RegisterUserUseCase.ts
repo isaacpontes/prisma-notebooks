@@ -1,5 +1,5 @@
 import { Encryptor } from "../../domain/helpers/Encryptor";
-import { UsersRepository } from "../../domain/repositories/users-repository";
+import { UsersRepository } from "../../domain/repositories/UsersRepository";
 
 export class RegisterUserUseCase {
     constructor(

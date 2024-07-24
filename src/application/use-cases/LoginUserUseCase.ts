@@ -1,6 +1,6 @@
 import { Encryptor } from "../../domain/helpers/Encryptor";
 import { TokenManager } from "../../domain/helpers/TokenManager";
-import { UsersRepository } from "../../domain/repositories/users-repository";
+import { UsersRepository } from "../../domain/repositories/UsersRepository";
 
 export class LoginUserUseCase {
     constructor(
