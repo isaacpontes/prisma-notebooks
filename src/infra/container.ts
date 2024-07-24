@@ -9,17 +9,13 @@ const encryptor = new BcryptAdapter();
 const tokenManager = new JwtAdapter();
 const usersRepository = new UsersPostgreRepository();
 
-const registerUseCase = new RegisterUserUseCase(
-  usersRepository,
-  encryptor
-);
+const registerUseCase = new RegisterUserUseCase(usersRepository, encryptor);
 const loginUseCase = new LoginUserUseCase(
-  usersRepository,
-  encryptor,
-  tokenManager
+    usersRepository,
+    encryptor,
+    tokenManager
 );
 
-const authController = new AuthController(loginUseCase, registerUseCase)
+const authController = new AuthController(loginUseCase, registerUseCase);
 
-export { authController }
-
+export { authController };

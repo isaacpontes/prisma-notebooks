@@ -7,9 +7,10 @@ app.use(express.json());
 
 app.use("/api", router);
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-  console.log(err);
-  res.status(500).json({ message: err.message });
+    console.log(err);
+    res.status(500).json({ message: err.message });
 });
 
 app.listen(3000, () => console.log(`Server started`));
